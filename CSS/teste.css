@@ -151,3 +151,16 @@ label{
     padding: 20px;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  #container{
+    flex-direction: column;
+  }
+
+  .left,
+  .right{
+    width: auto;
+  }
+    
+    
+  }
+
