@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(148, 148, 148);
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    margin-top: 7%;
+    width: 1280px;
+    height: 720px;
+    display: flex;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgb(229, 229, 229);
+
+}
+
+.right {
+    width: 30%;
+    background-color: rgb(28, 31, 253);
+   overflow: hidden;
+    
+}
+
+p{
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+h1{
+    color: white;
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+h4{
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    font-size: 30px;
+}
+
+h3{
+    background: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.form{
+    background: none;
+    margin: auto;
+    font-size: 40px;
+    padding: 40px;
+}
+
+.form p{
+    background: none;
+}
+
+input{
+    height: 50px;
+    width: 200px;
+}
+
+
+
+button{
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 180px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(40, 40, 246);
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 570;
+}
+button:hover{
+background-color: rgb(56, 56, 245);
+}
+
+#idoso, #iadulto{
+    margin: 2px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 20px;
+    width: 20px;
+
+}
+
+#ipeso, #ialtura{
+    width: 400px;
+    padding: 4px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#ipeso::placeholder, #ialtura::placeholder{
+    font-size: 30px;
+    padding: 4px;
+    color: rgb(93, 92, 92);
+}
+
+#ipeso::-webkit-outer-spin-button,
+#ipeso::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#ialtura::-webkit-outer-spin-button,
+#ialtura::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label{
+    background: none;
+    
+}
+
+#iresultado{
+    background: none;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+

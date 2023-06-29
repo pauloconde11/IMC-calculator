@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <title>IMC CALCULATOR</title>
+</head>
+<body>
+    <div id="container">
+        <div class="left">
+            <section class="texto"><h4>IMC Cálculo do Índice de Massa Corporal</h4></section>
+            <div class="form">
+                <p>Informações do paciente</p>
+    
+                <label for="peso">Peso</label><br>
+                <input type="text" onkeydown="leitorMedida('ipeso')" name="peso" id="ipeso" placeholder="Valor em kg" maxlength="5"><br>
+                
+                <label for="altura" >Altura</label><br>
+                <input type="text"  onkeydown="leitorMedida2('ialtura')" name="altura" id="ialtura" placeholder="Valor em metros" maxlength="4"><br>
+    
+                <input type="radio" name="pessoa" id="idoso" value="idoso" >
+                <label for="idoso">Idoso: idade > 65 anos</label><br>
+    
+                <input type="radio" name="pessoa" id="iadulto" value="adulto" >
+                <label for="iadulto">Adulto: idade <= 65 anos</label><br>
+    
+                <button id="submit_Btn" onclick="calculadoraIMC()">CALCULAR</button>
+    
+                
+            </div>
+        </div>
+
+        <div class="right">
+            <section class="textoResultado"><h3>RESULTADO</h3></section>
+            <section class="textoResultado"><h1 id="iseuResultado"></h1></section>
+            <p id="iresultado">O Índice de Massa Corporal (IMC) é um parâmetro muito utilizado para classificar uma pessoa conforme o seu peso e altura. Geralmente, médicos, fisioterapeutas e educadores físicos usam a fórmula para avaliar o estado de saúde dos seus pacientes.</p>
+        </div>
+
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
